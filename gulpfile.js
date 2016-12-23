@@ -38,6 +38,18 @@ gulp.task('js', function() {
     .pipe(notify('JS compiled...'));
 });
 
+gulp.task('production', function() {
+  gulp.src('./static/css/garden.css')
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('./static/css'))
+    .pipe(notify('CSS minified...'));
+
+  gulp.src('./static/js/garden.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./static/js'))
+    .pipe(notify('JS minified...'));
+});
+
 // Rerun the task when a file changes
 gulp.task('watch', function() {
   gulp.watch('./assets/scss/**/*.scss', ['sass']);
