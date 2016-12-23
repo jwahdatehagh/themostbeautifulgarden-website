@@ -1,0 +1,31 @@
+#section-16 {
+  .fp-scroller {
+    flex-direction: column;
+  }
+  .text {
+    max-width: 30em;
+    margin-bottom: -4em;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: -8em;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-top: 2em;
+      margin-bottom: -4em;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-top: 2em;
+      margin-bottom: -10em;
+    }
+  }
+  .image-wrap {
+    height: 81.8vw;
+
+    .image {
+      img {
+        width: 100vw;
+      }
+    }
+
+  }
+}

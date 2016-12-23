@@ -1,0 +1,46 @@
+/**
+ * Responsive Typography
+ */
+
+html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 20px;
+  }
+}
+
+h1 {
+  max-width: 5em;
+  font-weight: 900;
+
+  small {
+    display: block;
+    font-weight: 900;
+    font-size: 50%;
+    margin-top: 1em;
+  }
+}
+
+cite {
+  display: block;
+  text-align: right;
+}
+
+.text {
+  text-align: justify;
+}

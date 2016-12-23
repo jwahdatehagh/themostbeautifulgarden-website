@@ -1,0 +1,27 @@
+#section-2 {
+  .image-wrap {
+    min-height: 50vh;
+
+    .image {
+      background-image: url('/static/img/section-2.jpg');
+      background-position: 60% 40%;
+    }
+  }
+
+  .text-wrap {
+    p {
+      max-width: 20em;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .image-wrap {
+      // @include image-skew-left;
+
+      .image {
+        // background-image: url('/static/img/section-1.jpg');
+        background-position: 50% -0%;
+      }
+    }
+  }
+}

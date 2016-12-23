@@ -1,0 +1,48 @@
+#section-8 {
+  .image-wrap {
+    .image {
+      background-image: url('/static/img/section-8.png');
+      background-position: 0% 50%;
+    }
+  }
+
+  .text-wrap {
+    .text {
+      padding-right: 0;
+      text-align: left;
+      max-width: 30em;
+      z-index: 100;
+    }
+  }
+
+  @media (max-width: 1050px) {
+    .text-wrap {
+      background-color: rgba(47, 50, 56, 0.5);
+      box-shadow: 0 0 2rem 2rem rgba(47, 50, 56, 0.5);
+      z-index: 100;
+
+      .text {
+
+      }
+    }
+    .image-wrap {
+
+      .image {
+        position: absolute;
+        width: 100vw;
+        right: -1rem;
+        z-index: -1;
+        background-position: -20% 50%;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .image-wrap {
+      .image {
+        width: 120vw;
+        right: -0rem;
+        background-position: -10% 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+#section-17 {
+  .fp-scroller {
+    flex-direction: column;
+  }
+  .text {
+    max-width: 30em;
+  }
+
+  img {
+    max-width: 100%;
+    margin-bottom: 3rem;
+    margin-top: -3rem;
+  }
+  cite {
+    margin-top: 3em;
+  }
+
+  hr {
+    margin: 5rem 0;
+
+  }
+
+  .actions {
+    margin: 5rem 0;
+  }
+}

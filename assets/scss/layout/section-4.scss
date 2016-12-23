@@ -1,0 +1,23 @@
+#section-4 {
+  .text {
+
+    max-width: 30em;
+
+    p {
+      font-size: $font-size-lg;
+      font-family: $font-family-serif;
+    }
+
+    cite {
+      font-size: $font-size-sm;
+      display: block;
+      text-align: right;
+    }
+  }
+
+  .fp-scrollable {
+    display: flex;
+    align-items: center;
+  }
+
+}

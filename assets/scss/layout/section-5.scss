@@ -1,0 +1,14 @@
+#section-5 {
+  .image-wrap {
+    min-height: 50vh;
+
+    .image {
+      background-image: url('/static/img/section-5.jpg');
+      background-position: 0 10%;
+    }
+  }
+
+  .text {
+    max-width: 30em;
+  }
+}

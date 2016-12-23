@@ -1,0 +1,30 @@
+/**
+ * Help a sticky menu bar adapt to the WP admin bar when it's present.
+ *
+ * @param  {number} $offset: 0   The scroll offset
+ */
+@mixin admin-sticky-fix( $offset: 0 ) {
+  $narrow-offset: 46px;
+  $wide-offset: 32px;
+
+  @if $offset != 0 and type-of($offset) == 'number' {
+    $narrow-offset: $narrow-offset + $offset;
+    $wide-offset: $wide-offset + $offset;
+  }
+  .admin-bar & {
+    top: $narrow-offset;
+    position: absolute;
+
+    // This is where the admin bar collapses and becomes 46px high
+    @media screen and (min-width: 601px) {
+      position: fixed;
+      top: $narrow-offset;
+    }
+
+    // This is where the admin bar expands and shrinks to 32px height
+    @media screen and (min-width: 783px) {
+      position: fixed;
+      top: $wide-offset;
+    }
+  }
+}

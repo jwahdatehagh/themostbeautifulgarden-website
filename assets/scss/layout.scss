@@ -1,0 +1,97 @@
+.fp-tableCell {
+  min-height: 100%;
+}
+
+.fp-scrollable {
+
+  .fp-scroller {
+    min-height: 100vh;
+    display: flex;
+  }
+}
+
+.section-inner {
+  @extend .row;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+// animations
+.section {
+  .image-wrap, .text-wrap {
+    opacity: 0;
+  }
+  .image-wrap {
+    transition: all .6s;
+  }
+  .text-wrap {
+    transition: all .9s;
+    transform: translate3d(0, 6rem, 0);
+  }
+
+  &.active {
+    .image-wrap {
+      opacity: 1;
+    }
+    .text-wrap {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  &.fp-completely {
+  }
+
+  .image-wrap {
+    position: relative;
+    .image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      img {
+      }
+    }
+  }
+  .text-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text {
+      padding: 3rem;
+    }
+  }
+}
+
+@mixin image-skew-left {
+  transform: skewX(-6deg);
+  overflow: hidden;
+  position: relative;
+  padding-left: 2rem;
+  left: -2rem;
+  .image {
+    background-position: 50% 50%;
+    transform: skewX(6deg);
+  }
+}
+
+
+@import "layout/section-1.scss";
+@import "layout/section-2.scss";
+@import "layout/section-3.scss";
+@import "layout/section-4.scss";
+@import "layout/section-5.scss";
+@import "layout/section-6.scss";
+@import "layout/section-7.scss";
+@import "layout/section-8.scss";
+@import "layout/section-9.scss";
+@import "layout/section-10.scss";
+@import "layout/section-11.scss";
+@import "layout/section-12.scss";
+@import "layout/section-13.scss";
+@import "layout/section-14.scss";
+@import "layout/section-15.scss";
+@import "layout/section-16.scss";
+@import "layout/section-17.scss";
+@import "layout/section-18.scss";

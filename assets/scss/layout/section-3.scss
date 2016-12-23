@@ -1,0 +1,42 @@
+#section-3 {
+  .image-wrap {
+    min-height: 50vh;
+
+    .image {
+      overflow-x: scroll;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  .text-wrap {
+    .text {
+      max-width: 30em;
+    }
+  }
+
+  @media (min-width: 930px) {
+    .image-wrap {
+      min-height: 19vw;
+
+      .image img {
+        height: auto;
+        width: 100%;
+      }
+    }
+    .text {
+      padding-top: 0em;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .image-wrap {
+
+      .image {
+      }
+    }
+  }
+}

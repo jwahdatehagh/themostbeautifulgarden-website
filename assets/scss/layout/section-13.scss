@@ -1,0 +1,18 @@
+#section-13 {
+  .fp-scroller {
+    flex-direction: column;
+  }
+  .text {
+    max-width: 30em;
+  }
+  .image-wrap {
+    height: 60vw;
+
+    .image {
+      img {
+        width: 100vw;
+      }
+    }
+
+  }
+}
