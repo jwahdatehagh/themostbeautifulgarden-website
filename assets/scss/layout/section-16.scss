@@ -7,7 +7,10 @@
     margin-bottom: -4em;
 
     @include media-breakpoint-up(md) {
-      margin-bottom: -8em;
+      margin-bottom: -6em;
+      max-width: 40em;
+      column-count: 2;
+      column-gap: 4em;
     }
     @include media-breakpoint-up(lg) {
       margin-top: 2em;
