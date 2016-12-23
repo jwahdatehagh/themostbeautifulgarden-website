@@ -1,15 +1,15 @@
 #section-3 {
   .image-wrap {
-    min-height: 50vh;
+    max-height: 30vh;
 
     .image {
       overflow-x: scroll;
-
-      img {
-        height: 100%;
-        width: auto;
-      }
+      background-image: url("/static/img/section-3.jpg");
+      background-position: 30% center;
     }
+  }
+  .text-wrap {
+    min-height: 70vh;
   }
 
   .text-wrap {
@@ -18,25 +18,19 @@
     }
   }
 
-  @media (min-width: 930px) {
+  @include media-breakpoint-down(xs) {
     .image-wrap {
-      min-height: 19vw;
-
-      .image img {
-        height: auto;
-        width: 100%;
-      }
-    }
-    .text {
-      padding-top: 0em;
+      min-height: 30vh;
     }
   }
 
   @include media-breakpoint-up(sm) {
     .image-wrap {
-
-      .image {
-      }
+      min-height: 40vh;
+    }
+    .text-wrap {
+      min-height: 60vh;
+      max-height: 60vh;
     }
   }
 }
