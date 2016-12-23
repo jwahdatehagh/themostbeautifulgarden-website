@@ -13,6 +13,9 @@
     }
   }
   @include media-breakpoint-up(lg) {
+    .image-wrap {
+      min-height: auto;
+    }
     .section-inner {
       // height: 100vh;
     }
