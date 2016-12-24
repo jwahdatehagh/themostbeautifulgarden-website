@@ -15,10 +15,15 @@
       background-position: center top;
     }
   }
+  @include media-breakpoint-up(sm) {
+    font-size: $display4-size;
+  }
 
   @include media-breakpoint-up(lg) {
     h1 {
       margin-top: 0;
+      margin-right: 1.6em;
+      font-size: $display4-size;
     }
 
     .image-wrap {
@@ -28,6 +33,17 @@
         background-image: url('/static/img/section-1.jpg');
         background-position: 60% center;
       }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    h1 {
+      margin-right: 2.6em;
+      font-size: $display3-size;
+    }
+  }
+  @media(min-width: 2050px) {
+    h1 {
+      font-size: $display2-size;
     }
   }
 }
