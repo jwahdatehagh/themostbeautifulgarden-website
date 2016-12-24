@@ -16,11 +16,14 @@
   }
 
   hr {
-    margin: 5rem 0;
-
+    margin: 3rem 0;
   }
 
   .actions {
-    margin: 5rem 0;
+    margin: 3rem 0 5rem;
+    text-align: left;
+    .fb-like {
+      display: inline-block;
+    }
   }
 }
